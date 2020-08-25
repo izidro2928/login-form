@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html{
+    background-color: #295a8b;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-title{
+    color: #b9dcff;
+    font-size: 40px;
+    letter-spacing: -0.0013em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-forms{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 15px;
+}
+.register, .login{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #dedede;
+}
+.login, .credits{
+    text-align: center;
+}
+.social-icon{
+    margin-right: 10px;
+}
+.facebook, .google{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.recover-links{
+    padding: 15px 0;
+    border-top: solid 1px #dedede;
+    margin-top: 15px;
+}
+
+.credits{
+    color: #ffb1ff;
+}
+
+.credits a{
+    color:#a6c8ff;
+}
