@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="assets/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/js.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="title has-text-centered form-title">Form Login</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section-forms">
+                    <div class="columns">
+                        <div class="column">
+                            <h3 class="is-size-5 register">Register</h3>
+                            <p class="mb-3">Insert your account information:</p>
+                            <form action="index.html">
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="text" placeholder="Username">
+                                        <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="email" placeholder="Email">
+                                        <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="password" placeholder="Password">
+                                        <span class="icon is-small is-left"><i class="fas fa-key"></i></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="password" placeholder="Repeat password">
+                                        <span class="icon is-small is-left"><i class="fas fa-key"></i></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            I agree to the <a href="#">terms and conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-link">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="column">
+                            <h3 class="is-size-5 login">Login</h3>
+                            <p class="mb-3">Login using social network:</p>
+                            <a class="button is-info facebook" href=""><span class="social-icon"><i class="fab fa-facebook-square"></i></span> Facebook</a>
+                            <a href="" class="button is-danger google"><span class="social-icon is-orange"><i class="fab fa-chrome"></i></span> Google</a>
+                            <p class="mb-3">Or insert your account information:</p>
+                            <form action="index.html">
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="text" placeholder="Enter Email or Username">
+                                        <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="password" placeholder="Enter Password">
+                                        <span class="icon is-small is-left"><i class="fas fa-key"></i></span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            Keep me logged in
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-link">Login</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="recover-links">
+                                Forgot your <a onclick="showModal()" href="#">Password?</a>
+                            </div>
+                            <div id="my-modal" class="modal form-modal">
+                                <div class="modal-background"></div>
+                                <div class="modal-card">
+                                    <header class="modal-card-head">
+                                        <p class="modal-card-title">Forgot Password</p>
+                                        <button onclick="hideModal()" class="delete" aria-label="close"></button>
+                                    </header>
+                                    <section class="modal-card-body">
+                                        <p>We will send a link to your email.</p>
+                                        <div class="field">
+                                            <div class="control has-icons-left">
+                                                <input type="email" class="input" placeholder="Insert Your Email">
+                                                <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <footer class="modal-card-foot">
+                                        <button type="submit" class="button is-success">Send email</button>
+                                        <button onclick="hideModal()" class="button">Cancel</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section">
+            <div class="container credits">
+               <p> Credits: <span> <a href=""><i class="fab fa-facebook-f"></i></span> Isidro Gonzalez</p></a>
+               <a href="https://bulma.io"><img src="assets/img/made-with-bulma.png" alt="Bulma framework" width="128" height="24"></a> 
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
